@@ -25,7 +25,7 @@ class LessonsRepositoryJdbcImpl implements LessonsRepository {
                     .build();
 
 
-    public LessonsRepositoryJdbcImpl(Connection connection) {
+    LessonsRepositoryJdbcImpl(Connection connection) {
         this.connection = connection;
     }
 

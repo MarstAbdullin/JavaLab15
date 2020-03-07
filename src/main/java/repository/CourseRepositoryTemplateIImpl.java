@@ -27,7 +27,7 @@ public class CourseRepositoryTemplateIImpl implements CourseRepository {
         this.template = new JdbcTemplate(dataSource);
     }
 
-    public RowMapper<Course> mapRow = (row, rowNumb) -> {
+    private RowMapper<Course> mapRow = (row, rowNumb) -> {
         try {
             Long id = row.getLong("id");
             Course course;
